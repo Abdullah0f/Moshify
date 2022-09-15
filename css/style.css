@@ -6,6 +6,9 @@
     --color-body: #918ca4;
     font-size:62.5%
 }
+*,*::after,*::before{
+    box-sizing: border-box;
+}
  /* Typography */
 body{
     font-family: Inter, Arial, Helvetica, sans-serif;
@@ -144,4 +147,59 @@ a{
     justify-content: center;
     align-items: center;
 
+}
+
+/* buttons */
+
+.btn{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    border-radius: 40px;
+    border: none;
+    cursor:pointer;
+    text-align: center; 
+    margin: 1rem 0;
+    
+}
+.btn--primary{
+    color:#fff;
+    background: var(--color-primary);
+}
+.btn--primary:hover{
+    filter: brightness(90%);
+}
+.btn--secondary{
+    color:#fff;
+    background: var(--color-secondary);
+}
+.btn--secondary:hover{
+    filter: brightness(90%);
+}
+.btn--accent{
+    background: var(--color-accent);
+    color:#fff;
+}
+.btn--accent:hover{
+    filter: brightness(90%);
+}
+.btn--outline{
+    background: none;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+.btn--outline:hover{
+    background: var(--color-headings);
+    color:#fff
+}
+.btn--block{
+    width:100%;
+    display: inline-block;
+}
+
+@media screen and (min-width:1024px){
+    .btn{
+        font-size:1.5rem;
+    }
 }
