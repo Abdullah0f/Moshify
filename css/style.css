@@ -469,3 +469,31 @@ padding: 3rem;
         margin: 0 2rem;
     }
 }
+
+/* collapsible */
+.collapsible__header{
+    display: flex;
+    justify-content: space-between;
+}
+.collapsible__heading{
+    margin-top: 0;
+    font-size: 3rem;
+}
+.collapsible__chevron{
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.collapsible__content{
+    /* max-height: 0; */
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.collapsible--expanded .collapsible__content{
+    opacity:1;
+}
+.collapsible--expanded .collapsible__chevron{
+    transform: rotate(0)
+    
+}
