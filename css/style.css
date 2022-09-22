@@ -67,6 +67,9 @@ p{
     h3{
         font-size: 2.4rem;
     }
+    p{
+        font-size:1.8rem;
+    }
 }
 /* links */
 a{
@@ -681,4 +684,28 @@ color: #fff;
     grid-template-rows: repeat(2,6rem);
     }
 
+}
+
+/* feature */
+.feature__heading{
+    margin: 1rem 0;
+}
+.feature__image{
+   width:100%;
+    
+}
+.feature{
+    gap:4rem 2rem;
+    margin: 12rem 0
+}
+.feature:first-of-type{
+    margin-top:6rem;
+}
+.block_header{
+    text-align: center;
+}
+@media (min-width: 768px){
+    .feature:nth-of-type(even) .feature__content{
+        order:2
+    }
 }
