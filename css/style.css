@@ -27,6 +27,10 @@ html{
     align-items: center;
 }
  /* Typography */
+ ::selection{
+    background-color: var(--color-primary);
+    color: #fff;
+ }
 body{
     font-family: Inter, Arial, Helvetica, sans-serif;
     color: var(--color-body);
@@ -387,15 +391,21 @@ a{
 /* media */
 .media{
     display:flex;
+    margin: 4rem 2rem;
 }
 .media__title{
     margin-top:0
 }
 .media__body{
     margin:0 2rem;
+    line-height: 1.6
 }
 .media__image{
     margin-top: 1rem;
+}
+.media h3{
+    color: #fff;
+    font-weight: 600;
 }
 
 /* quotes */
@@ -566,11 +576,14 @@ padding: 3rem;
     background: #000;
     color:#7b858b;
 }
-.block--dark .block__heading{
+.block--dark h1,
+.block--dark h2,
+.block--dark h3
+{
     color: #fff;
 }
 .block--skewed-right{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
     padding-bottom: calc(var(--padding-vertical) + 4rem) ;
 }
 .block--skewed-left{
@@ -649,7 +662,7 @@ color: #fff;
     letter-spacing: 1px;
     margin: 2rem 0 5rem
 }
-@media all and (min-width:768px){
+@media screen and (min-width:768px){
     .hero{
         padding-top:0
     }
@@ -678,7 +691,7 @@ color: #fff;
 
 }
 
-@media all and (min-width:768px){
+@media screen and (min-width:768px){
     .block-domain__prices{
     grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
     grid-template-rows: repeat(2,6rem);
@@ -708,4 +721,31 @@ color: #fff;
     .feature:nth-of-type(even) .feature__content{
         order:2
     }
+}
+
+/* showcase */
+/* .showcase{
+    background:#000;
+    padding: 2rem;
+} */
+.showcase>h2{
+    text-align: center;
+    color: #fff;
+    margin-bottom:4.5rem;
+    margin-top:0;
+}
+.showcase__img{
+    width:100%;
+}
+
+@media screen and (min-width: 768px){
+    .showcase__img{
+        width:auto;
+        max-width: 700px;
+        justify-self: end;
+        }
+        .showcase .grid{
+            grid-template-columns: 50% 50%;
+        }
+   
 }
