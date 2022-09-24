@@ -12,12 +12,17 @@ html{
     font-size:62.5%
 
 }
+.hidden{
+    visibility:hidden;
+}
 *,*::after,*::before{
     box-sizing: border-box;
 }
 .container{
     max-width: 1140px;
     margin: 0 auto;
+    display: table;
+
 }
 .container__center{
     max-width: 80%;
@@ -34,7 +39,7 @@ html{
 body{
     font-family: Inter, Arial, Helvetica, sans-serif;
     color: var(--color-body);
-    font-size: 2.4rem;
+    font-size: 2.38rem;
     line-height: 1.5;
 }
 
@@ -60,7 +65,7 @@ p{
 }
 @media screen and (min-width:1024px) {
     body{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
     h1{
         font-size: 8rem;
@@ -286,9 +291,8 @@ a{
 }
 .input-group .btn{
     margin:1px;
-  
-
-}
+    padding: 2rem 4vw;
+  }
 
 @media screen and (min-width:1024px) {
     .input{
@@ -679,7 +683,7 @@ color: #fff;
 
 .block-domain__prices{
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,6rem);
     font-size: 2rem;
     font-weight: 600;
