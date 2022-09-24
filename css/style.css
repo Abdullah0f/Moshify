@@ -119,7 +119,7 @@ a{
 }
 .badge--secondary{
     background: var(--color-secondary);
-    color:#fff;
+    color:#fff; 
 }
 .badge--small{
     font-size:1.6rem;
