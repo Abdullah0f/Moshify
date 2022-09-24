@@ -692,7 +692,9 @@ color: #fff;
     margin: 0 auto;
 
 }
-
+.block-domain__prices li{
+    cursor:pointer;
+}
 @media screen and (min-width:768px){
     .block-domain__prices{
     grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
